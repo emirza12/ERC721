@@ -30,7 +30,7 @@ contract MyERC721Test is Test {
 
         // Transfer ERC20 and ERC223 tokens to the user
         erc20.transfer(user, erc20Amount);
-        erc223.mint(200* 10 ** 18);
+        erc223.transfer(user, 200* 10 ** 18);
     }
 
     // Enhanced test for buying an ERC721 with ERC20
